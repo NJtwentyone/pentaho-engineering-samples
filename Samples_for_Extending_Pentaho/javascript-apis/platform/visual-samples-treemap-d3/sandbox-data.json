@@ -1,0 +1,640 @@
+{
+  "productSales": {
+    "model": [
+      {"name": "productFamily", "type": "string", "label": "Product Family"},
+      {"name": "sales",         "type": "number", "label": "Sales"}
+    ],
+    "rows": [
+      {"c": [{"v": "cars-classic", "f": "Classic Cars"}, 2746782]},
+      {"c": [{"v": "motorcycles", "f": "Motorcycles"}, 753753]},
+      {"c": [{"v": "planes", "f": "Planes"}, 748324]},
+      {"c": [{"v": "ships", "f": "Ships"}, 538982]},
+      {"c": [{"v": "trains", "f": "Trains"}, 165215]},
+      {"c": [{"v": "trucks-and-buses", "f": "Trucks and Buses"}, 756438]},
+      {"c": [{"v": "cars-vintage", "f": "Vintage Cars"}, 1308470]}
+    ]
+  },
+  "territoryLineSales": {
+  "layout": {
+    "meas": [
+      "[MEASURE:0]"
+    ],
+    "rows": [
+      "[Markets].[Territory]",
+      "[Product].[Line]"
+    ],
+    "cols": [
+      
+    ]
+  },
+  "formatStrings": {
+    "[MEASURE:0]": "#,###",
+    "thousandSeparator": ",",
+    "decimalPlaceholder": ".",
+    "currencySymbol": "$"
+  },
+  "model": {
+    "format": {
+      "number": {
+        "style": {
+          "currency": "$",
+          "decimal": ".",
+          "group": ","
+        }
+      }
+    },
+    "attrs": [
+      {
+        "hierarchyOrdinal": 0,
+        "members": [
+          {
+            "p": {
+              "color": "#0D8ECF"
+            },
+            "v": "[Markets].[APAC]",
+            "f": "APAC"
+          },
+          {
+            "p": {
+              "color": "#B0DE09"
+            },
+            "v": "[Markets].[EMEA]",
+            "f": "EMEA"
+          },
+          {
+            "p": {
+              "color": "#FCD202"
+            },
+            "v": "[Markets].[Japan]",
+            "f": "Japan"
+          },
+          {
+            "p": {
+              "color": "#FF6600"
+            },
+            "v": "[Markets].[NA]",
+            "f": "NA"
+          }
+        ],
+        "name": "[Markets].[Territory]",
+        "isKey": true,
+        "hierarchyName": "[Markets]",
+        "label": "Territory",
+        "type": "string"
+      },
+      {
+        "hierarchyOrdinal": 0,
+        "members": [
+          {
+            "v": "[Product].[Classic Cars]",
+            "f": "Classic Cars"
+          },
+          {
+            "v": "[Product].[Motorcycles]",
+            "f": "Motorcycles"
+          },
+          {
+            "v": "[Product].[Planes]",
+            "f": "Planes"
+          },
+          {
+            "v": "[Product].[Ships]",
+            "f": "Ships"
+          },
+          {
+            "v": "[Product].[Trains]",
+            "f": "Trains"
+          },
+          {
+            "v": "[Product].[Trucks and Buses]",
+            "f": "Trucks and Buses"
+          },
+          {
+            "v": "[Product].[Vintage Cars]",
+            "f": "Vintage Cars"
+          }
+        ],
+        "name": "[Product].[Line]",
+        "isKey": true,
+        "hierarchyName": "[Product]",
+        "label": "Line",
+        "type": "string"
+      },
+      {
+        "p": {
+          "color": "#0d8ecf"
+        },
+        "isPercent": false,
+        "name": "[MEASURE:0]",
+        "format": {
+          "number": {
+            "mask": "#,###"
+          }
+        },
+        "label": "Sales",
+        "type": "number"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "c": [
+        {
+          "v": "[Markets].[APAC]",
+          "f": "APAC"
+        },
+        {
+          "v": "[Product].[Classic Cars]",
+          "f": "Classic Cars"
+        },
+        {
+          "v": 411956.3000000001,
+          "f": "411,956"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[APAC]",
+          "f": "APAC"
+        },
+        {
+          "v": "[Product].[Motorcycles]",
+          "f": "Motorcycles"
+        },
+        {
+          "v": 189818.23000000004,
+          "f": "189,818"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[APAC]",
+          "f": "APAC"
+        },
+        {
+          "v": "[Product].[Planes]",
+          "f": "Planes"
+        },
+        {
+          "v": 121426.19999999997,
+          "f": "121,426"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[APAC]",
+          "f": "APAC"
+        },
+        {
+          "v": "[Product].[Ships]",
+          "f": "Ships"
+        },
+        {
+          "v": 38393.48,
+          "f": "38,393"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[APAC]",
+          "f": "APAC"
+        },
+        {
+          "v": "[Product].[Trains]",
+          "f": "Trains"
+        },
+        {
+          "v": 9907.07,
+          "f": "9,907"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[APAC]",
+          "f": "APAC"
+        },
+        {
+          "v": "[Product].[Trucks and Buses]",
+          "f": "Trucks and Buses"
+        },
+        {
+          "v": 145665.69000000003,
+          "f": "145,666"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[APAC]",
+          "f": "APAC"
+        },
+        {
+          "v": "[Product].[Vintage Cars]",
+          "f": "Vintage Cars"
+        },
+        {
+          "v": 364538.92000000004,
+          "f": "364,539"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[EMEA]",
+          "f": "EMEA"
+        },
+        {
+          "v": "[Product].[Classic Cars]",
+          "f": "Classic Cars"
+        },
+        {
+          "v": 2091600.6399999987,
+          "f": "2,091,601"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[EMEA]",
+          "f": "EMEA"
+        },
+        {
+          "v": "[Product].[Motorcycles]",
+          "f": "Motorcycles"
+        },
+        {
+          "v": 507138.2800000002,
+          "f": "507,138"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[EMEA]",
+          "f": "EMEA"
+        },
+        {
+          "v": "[Product].[Planes]",
+          "f": "Planes"
+        },
+        {
+          "v": 491654.8199999999,
+          "f": "491,655"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[EMEA]",
+          "f": "EMEA"
+        },
+        {
+          "v": "[Product].[Ships]",
+          "f": "Ships"
+        },
+        {
+          "v": 427264.6799999999,
+          "f": "427,265"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[EMEA]",
+          "f": "EMEA"
+        },
+        {
+          "v": "[Product].[Trains]",
+          "f": "Trains"
+        },
+        {
+          "v": 138506.18,
+          "f": "138,506"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[EMEA]",
+          "f": "EMEA"
+        },
+        {
+          "v": "[Product].[Trucks and Buses]",
+          "f": "Trucks and Buses"
+        },
+        {
+          "v": 500978.8199999998,
+          "f": "500,979"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[EMEA]",
+          "f": "EMEA"
+        },
+        {
+          "v": "[Product].[Vintage Cars]",
+          "f": "Vintage Cars"
+        },
+        {
+          "v": 851080.8999999996,
+          "f": "851,081"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[Japan]",
+          "f": "Japan"
+        },
+        {
+          "v": "[Product].[Classic Cars]",
+          "f": "Classic Cars"
+        },
+        {
+          "v": 181601.49000000002,
+          "f": "181,601"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[Japan]",
+          "f": "Japan"
+        },
+        {
+          "v": "[Product].[Motorcycles]",
+          "f": "Motorcycles"
+        },
+        {
+          "v": 52619.49,
+          "f": "52,619"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[Japan]",
+          "f": "Japan"
+        },
+        {
+          "v": "[Product].[Planes]",
+          "f": "Planes"
+        },
+        {
+          "v": 109733.13999999997,
+          "f": "109,733"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[Japan]",
+          "f": "Japan"
+        },
+        {
+          "v": "[Product].[Ships]",
+          "f": "Ships"
+        },
+        {
+          "v": 33015.54,
+          "f": "33,016"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[Japan]",
+          "f": "Japan"
+        },
+        {
+          "v": "[Product].[Trains]",
+          "f": "Trains"
+        },
+        {
+          "v": 16802.379999999997,
+          "f": "16,802"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[Japan]",
+          "f": "Japan"
+        },
+        {
+          "v": "[Product].[Trucks and Buses]",
+          "f": "Trucks and Buses"
+        },
+        {
+          "v": 57847.659999999996,
+          "f": "57,848"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[Japan]",
+          "f": "Japan"
+        },
+        {
+          "v": "[Product].[Vintage Cars]",
+          "f": "Vintage Cars"
+        },
+        {
+          "v": 52337.88,
+          "f": "52,338"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[NA]",
+          "f": "NA"
+        },
+        {
+          "v": "[Product].[Classic Cars]",
+          "f": "Classic Cars"
+        },
+        {
+          "v": 1406261.439999998,
+          "f": "1,406,261"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[NA]",
+          "f": "NA"
+        },
+        {
+          "v": "[Product].[Motorcycles]",
+          "f": "Motorcycles"
+        },
+        {
+          "v": 524549.1900000002,
+          "f": "524,549"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[NA]",
+          "f": "NA"
+        },
+        {
+          "v": "[Product].[Planes]",
+          "f": "Planes"
+        },
+        {
+          "v": 353942.96,
+          "f": "353,943"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[NA]",
+          "f": "NA"
+        },
+        {
+          "v": "[Product].[Ships]",
+          "f": "Ships"
+        },
+        {
+          "v": 249997.15000000005,
+          "f": "249,997"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[NA]",
+          "f": "NA"
+        },
+        {
+          "v": "[Product].[Trains]",
+          "f": "Trains"
+        },
+        {
+          "v": 69253.56000000001,
+          "f": "69,254"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[NA]",
+          "f": "NA"
+        },
+        {
+          "v": "[Product].[Trucks and Buses]",
+          "f": "Trucks and Buses"
+        },
+        {
+          "v": 449788.39999999985,
+          "f": "449,788"
+        }
+      ]
+    },
+    {
+      "c": [
+        {
+          "v": "[Markets].[NA]",
+          "f": "NA"
+        },
+        {
+          "v": "[Product].[Vintage Cars]",
+          "f": "Vintage Cars"
+        },
+        {
+          "v": 798268.6900000003,
+          "f": "798,269"
+        }
+      ]
+    }
+  ],
+  "version": 4,
+  "cols": [
+    {
+      "dataReq": [
+        {
+          "level": "[Markets].[Territory]",
+          "id": "rows"
+        }
+      ],
+      "id": "[Markets].[Territory]",
+      "label": "Territory",
+      "attr": "[Markets].[Territory]",
+      "type": "string"
+    },
+    {
+      "dataReq": [
+        {
+          "level": "[Product].[Line]",
+          "id": "rows"
+        }
+      ],
+      "id": "[Product].[Line]",
+      "label": "Line",
+      "attr": "[Product].[Line]",
+      "type": "string"
+    },
+    {
+      "dataReq": [
+        {
+          "level": "[Measures].[MeasuresLevel]",
+          "id": "measures"
+        }
+      ],
+      "id": "[MEASURE:0]",
+      "label": "Sales",
+      "attr": "[MEASURE:0]",
+      "type": "number"
+    }
+  ],
+  "colors": {
+    "[Measures].[MeasuresLevel]": {
+      "[MEASURE:0]": "#0d8ecf"
+    },
+    "[Markets].[Territory]": {
+      "[Markets].[APAC]": "#0D8ECF",
+      "[Markets].[Japan]": "#FCD202",
+      "[Markets].[EMEA]": "#B0DE09",
+      "[Markets].[NA]": "#FF6600"
+    }
+  }
+}
+}

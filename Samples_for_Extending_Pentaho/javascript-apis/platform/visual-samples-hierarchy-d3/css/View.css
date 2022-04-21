@@ -1,0 +1,59 @@
+/*
+ * This program is free software; you can redistribute it and/or modify it under the
+ * terms of the GNU Lesser General Public License, version 2.1 as published by the Free Software
+ * Foundation.
+ *
+ * You should have received a copy of the GNU Lesser General Public License along with this
+ * program; if not, you can obtain a copy at http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+ * or from the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Lesser General Public License for more details.
+ *
+ * Copyright 2016 - 2019 Hitachi Vantara. All rights reserved.
+ */
+/* Part 1 */
+._pentaho-visual-samples-bar-d3-pentaho-visual-samples-bar-D3-View .bar {
+  stroke-width: 2px;
+}
+
+._pentaho-visual-samples-bar-d3-pentaho-visual-samples-bar-D3-View .bar:hover {
+  fill-opacity: 0.8;
+}
+
+._pentaho-visual-samples-bar-d3-pentaho-visual-samples-bar-D3-View .axis path,
+._pentaho-visual-samples-bar-d3-pentaho-visual-samples-bar-D3-View .tick line {
+  stroke: #cbdde8;
+}
+
+._pentaho-visual-samples-bar-d3-pentaho-visual-samples-bar-D3-View .tick text {
+  font-family: OpenSansLight, Helvetica, Arial, Sans serif;
+  fill: #26363d;
+}
+
+._pentaho-visual-samples-bar-d3-pentaho-visual-samples-bar-D3-View .title {
+  font-family: OpenSansLight, Helvetica, Arial, Sans serif;
+  font-size: 18px;
+  font-style: normal;
+  fill: #005f7d;
+}
+
+/* Part 2 -  Selected state */
+._pentaho-visual-samples-bar-d3-pentaho-visual-samples-bar-D3-View .bar.selected {
+  stroke-opacity: 0.4;
+  fill-opacity: 0.6;
+}
+
+._pentaho-visual-samples-bar-d3-pentaho-visual-samples-bar-D3-View .bar.selected:hover {
+  stroke-opacity: 0.8;
+}
+
+A.notSelected rect {
+  fill-opacity: 0.2;
+}
+
+A:hover {
+  text-decoration: none;
+}

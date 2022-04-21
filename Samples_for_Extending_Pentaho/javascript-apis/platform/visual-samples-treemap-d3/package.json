@@ -1,0 +1,49 @@
+{
+  "name": "@pentaho/visual-samples-treemap-d3",
+  "version": "0.0.1",
+  "description": "A sample treemap chart using the Visualization API and D3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pentaho/pentaho-engineering-samples.git"
+  },
+  "license": "Apache-2.0",
+  "paths": {
+    "pentaho/visual/samples/treemapD3": "/"
+  },
+  "config": {
+    "pentaho/modules": {
+      "pentaho/visual/samples/treemapD3/Model": {
+        "base": "pentaho/visual/Model",
+        "annotations": {
+          "pentaho/visual/DefaultView": {
+            "module": "./View"
+          },
+          "pentaho/theme/Theme": {
+            "main": "css!./css/Model"
+          }
+        }
+      },
+      "pentaho/visual/samples/treemapD3/View": {
+        "base": null,
+        "annotations": {
+          "pentaho/theme/Theme": {
+            "main": "css!./css/View"
+          },
+          "pentaho/theme/LoadTheme": {}
+        }
+      },
+      "pentaho/visual/samples/treemapD3/config": {
+        "type": "pentaho/config/spec/IRuleSet"
+      }
+    }
+  },
+  "dependencies": {
+    "d3": "^7.4.4"
+  },
+  "bundleDependencies": [
+    "d3"
+  ],
+  "devDependencies": {
+    "@pentaho/visual-sandbox": "^3.0.0"
+  }
+}
