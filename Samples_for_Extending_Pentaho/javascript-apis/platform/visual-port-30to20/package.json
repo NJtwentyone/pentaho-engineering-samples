@@ -1,0 +1,16 @@
+{
+  "name": "@pentaho/visual-port-30to20",
+  "version": "0.0.1-dev.1",
+  "description": "Pentaho AMD/RequireJS configuration to port visuals or viz 3.0 to looks of viz 2.0",
+  "license": "Apache-2.0",
+  "paths": {
+    "pentaho/visual/port/30to20": "/"
+  },
+  "config": {
+    "pentaho/modules": {
+      "pentaho/visual/port/30to20/config": {
+        "type": "pentaho/config/spec/IRuleSet"
+      }
+    }
+  }
+}
