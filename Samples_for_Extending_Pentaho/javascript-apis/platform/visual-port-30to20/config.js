@@ -352,6 +352,26 @@ define(function() {
 
       // #endregion
 
+      // START DEBUG New
+
+      // heatGrid model
+          {
+            priority: 10,
+            select: {
+              application: "pentaho/analyzer",
+              module: "pentaho/visual/models/HeatGrid"
+            },
+            apply: {
+              props: {
+                colorSet: {
+                  defaultValue: "ryg"
+                }
+              }
+            }
+          },
+
+      // END DEBUG
+
       // region Styles For Pentaho Analyzer
       // #region
 
